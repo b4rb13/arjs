@@ -35,8 +35,8 @@ function staticLoadPlaces() {
         {
             name: "Your place name",
             location: {
-                lat: 40.053121820556484, // add here latitude if using static data
-                lng: 44.51279883863852, // add here longitude if using static data
+                lat: 40.0531314, // add here latitude if using static data
+                lng: 44.5125535, // add here longitude if using static data
             }
         }
         // ,
@@ -88,6 +88,8 @@ function renderPlaces(places) {
     places.forEach((place) => {
         const latitude = place.location.lat;
         const longitude = place.location.lng;
+
+        console.log(place, '[lace');
 
         // add place icon
         const icon = document.createElement('a-image');
